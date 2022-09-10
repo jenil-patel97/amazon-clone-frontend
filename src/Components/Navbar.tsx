@@ -5,6 +5,7 @@ import {
   faMagnifyingGlass,
   faShoppingCart,
   faLocationDot,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
@@ -23,7 +24,10 @@ export class Header extends React.Component {
               className="object-contain cursor-pointer"
             />
             <div className="text-white flex items-center text-sm mx-6 cursor-pointer">
-              <FontAwesomeIcon icon={faLocationDot} style={{fontSize:'17px'}}/>
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                style={{ fontSize: "17px" }}
+              />
               <div className="mx-2">
                 <p>Hello,</p>
                 <p className="font-bold">Select your address</p>
@@ -56,14 +60,36 @@ export class Header extends React.Component {
               <p className="font-bold md:text-sm">& Orders</p>
             </div>
             <div className="relative link flex items-center">
-              <span className="absolute top-[-5px] right-0 md:right-[27px] h-5 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">0</span>
+              <span className="absolute top-[-5px] right-0 md:right-[27px] h-5 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">
+                0
+              </span>
               <FontAwesomeIcon icon={faShoppingCart} className="h-6" />
-              <p className="hidden md:inline font-bold mx-1 md:text-sm mt-3">Cart</p>
+              <p className="hidden md:inline font-bold mx-1 md:text-sm mt-3">
+                Cart
+              </p>
             </div>
           </div>
         </div>
         {/* Bottom Nav */}
-        <div></div>
+        <div className="flex items-center space-x-7 p-2 pl-4 bg-[#232f3e] text-white text-sm">
+          <p className="link flex items-center">
+            <FontAwesomeIcon icon={faBars} className="h-5 mr-2" />
+            All
+          </p>
+          <p className="link">Best Sellers</p>
+          <p className="link">Mobiles</p>
+          <p className="link">Books</p>
+          <p className="link hidden lg:inline-flex">Customer Service</p>
+          <p className="link">Electronics</p>
+          <p className="link">Fashion</p>
+          <p className="link hidden lg:inline-flex">Prime</p>
+          <p className="link hidden lg:inline-flex">New Release</p>
+          <p className="link">Home & Kitchen</p>
+          <p className="link hidden lg:inline-flex">Amazon Pay</p>
+          <p className="link hidden lg:inline-flex">Computers</p>
+          <p className="link hidden lg:inline-flex">Coupons</p>
+          <p className="link hidden lg:inline-flex">Toys & Games</p>
+        </div>
       </header>
     );
   }
