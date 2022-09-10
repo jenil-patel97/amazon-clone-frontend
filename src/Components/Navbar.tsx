@@ -42,22 +42,23 @@ export class Header extends React.Component {
 
           {/* Right */}
 
-          <div className="text-white flex items-center text-sm space-x-6 mx-6 whitespace-nowrap cursor-pointer">
+          <div className="text-white flex items-center text-sm space-x-6 mx-6 whitespace-nowrap">
             <div>
               <img src={flag} alt="flag"></img>
             </div>
 
-            <div>
+            <div className="link">
               <p>Hello, Sign in</p>
-              <p className="font-bold">Account & Lists</p>
+              <p className="font-bold md:text-sm">Account & Lists</p>
             </div>
-            <div>
+            <div className="link">
               <p>Returns</p>
-              <p className="font-bold">& Orders</p>
+              <p className="font-bold md:text-sm">& Orders</p>
             </div>
-            <div>
-              <FontAwesomeIcon icon={faShoppingCart} className="h-5" />
-              <p className="font-bold">Cart</p>
+            <div className="relative link flex items-center">
+              <span className="absolute top-[-5px] right-0 md:right-[27px] h-5 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">0</span>
+              <FontAwesomeIcon icon={faShoppingCart} className="h-6" />
+              <p className="hidden md:inline font-bold mx-1 md:text-sm mt-3">Cart</p>
             </div>
           </div>
         </div>
