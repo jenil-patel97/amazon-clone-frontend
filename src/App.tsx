@@ -1,5 +1,6 @@
 import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
+import Product from "./Components/Product";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Navbar />
       <main className="max-w-screen-2xl mx-auto">
         <Banner />
+        <Product />
       </main>
     </div>
   );
