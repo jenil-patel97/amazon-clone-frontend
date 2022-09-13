@@ -15,8 +15,6 @@ import el5 from "../images/Electronics/el-5.jpg";
 import el6 from "../images/Electronics/el-6.jpg";
 import el7 from "../images/Electronics/el-7.jpg";
 import el8 from "../images/Electronics/el-8.jpg";
-// import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 type Props = {};
 
@@ -55,17 +53,9 @@ const Product = (props: Props) => {
       </div>
       {/* Electronics Products */}
 
-      <h2 className="text-3xl font-semibold my-8">Electronics & accessories</h2>
+      <h2 className="text-3xl font-semibold my-8 cursor-default">Electronics & accessories</h2>
       <div className="w-auto relative">
-        <div className="flex">
-          {/* <Carousel
-            autoPlay
-            infiniteLoop
-            showStatus={false}
-            showIndicators={false}
-            showThumbs={false}
-            interval={5000}
-          > */}
+        <div className="flex cursor-pointer">
           <div className="h-[277px] w-[277px] text-center">
             <img loading="lazy" src={el1} alt="el1" />
             <h3>Headphones</h3>
