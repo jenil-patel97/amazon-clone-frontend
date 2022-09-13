@@ -131,7 +131,7 @@ const Product = (props: Props) => {
           </div>
         </div>
 
-        <div className="w-[280px] h-52 p-3">
+        <div className="w-[280px] h-[195px] p-3">
           <img src={tv} alt="tv" className="w-full h-full object-contain" />
           <p className="font-semibold mt-6">
             Mi 5X 138.8 cm (55 inch) 4K Ultra HD LED Android TV
