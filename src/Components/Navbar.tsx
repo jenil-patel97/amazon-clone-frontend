@@ -1,5 +1,5 @@
-import logo from "../images/logo.png";
-import flag from "../images/india.png";
+import logo from "../images/Navabar/logo.png";
+import flag from "../images/Navabar/india.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
