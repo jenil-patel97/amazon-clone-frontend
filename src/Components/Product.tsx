@@ -15,6 +15,17 @@ import el5 from "../images/Electronics/el-5.jpg";
 import el6 from "../images/Electronics/el-6.jpg";
 import el7 from "../images/Electronics/el-7.jpg";
 import el8 from "../images/Electronics/el-8.jpg";
+import mcb from "../images/HotDeals/macbook-pro.png";
+import tv from "../images/HotDeals/tv.png";
+import headphones from "../images/HotDeals/headphones.webp";
+import smartwatch from "../images/HotDeals/smt.webp";
+import dslr from "../images/HotDeals/dslr.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faIndianRupeeSign,
+  faStar,
+  faStarHalfStroke,
+} from "@fortawesome/free-solid-svg-icons";
 
 type Props = {};
 
@@ -53,7 +64,9 @@ const Product = (props: Props) => {
       </div>
       {/* Electronics Products */}
 
-      <h2 className="text-3xl font-semibold my-8 cursor-default">Electronics & accessories</h2>
+      <h2 className="text-3xl font-semibold my-8 cursor-default">
+        Electronics & accessories
+      </h2>
       <div className="w-auto relative">
         <div className="flex cursor-pointer">
           <div className="h-[277px] w-[277px] text-center">
@@ -87,6 +100,107 @@ const Product = (props: Props) => {
           <div className="h-[277px] w-[277px] text-center">
             <img loading="lazy" src={el8} alt="el8" />
             <h3>Camera accessories</h3>
+          </div>
+        </div>
+      </div>
+
+      {/* Hot Deals */}
+
+      <div className="mt-4">
+        <h3 className="text-3xl font-semibold cursor-default">Hot Deals</h3>
+      </div>
+
+      <div className="flex flex-wrap ">
+        <div>
+          <div className="w-[280px] h-52 p-3 ">
+            <img src={mcb} alt="mac" className="w-full h-full object-contain" />
+          </div>
+          <p className="font-semibold mt-1">Apple Macbook Pro 13</p>
+          <p className="font-semibold mt-2">
+            <FontAwesomeIcon icon={faIndianRupeeSign} /> 92,900
+          </p>
+          <div className="mt-2">
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon
+              icon={faStarHalfStroke}
+              color="#e0c40b"
+            ></FontAwesomeIcon>
+          </div>
+        </div>
+
+        <div className="w-[280px] h-52 p-3">
+          <img src={tv} alt="tv" className="w-full h-full object-contain" />
+          <p className="font-semibold mt-6">
+            Mi 5X 138.8 cm (55 inch) 4K Ultra HD LED Android TV
+          </p>
+          <p className="font-semibold mt-2">
+            <FontAwesomeIcon icon={faIndianRupeeSign} /> 46,999
+          </p>
+          <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faStarHalfStroke}
+            color="#e0c40b"
+          ></FontAwesomeIcon>
+        </div>
+
+        <div className="w-50 h-52 p-3">
+          <img
+            src={headphones}
+            alt="headphone"
+            className="w-full h-full object-contain"
+          />
+          <p className="font-semibold mt-6">boAt Rockerz 460</p>
+          <p className="font-semibold mt-2">
+            <FontAwesomeIcon icon={faIndianRupeeSign} /> 1,799
+          </p>
+          <div className="mt-2">
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+          </div>
+        </div>
+
+        <div className="w-50 h-52 p-3">
+          <img
+            src={smartwatch}
+            alt="watch"
+            className="w-full h-full object-contain"
+          />
+          <p className="font-semibold mt-6">boAt Storm Smart Watch</p>
+          <p className="font-semibold mt-2">
+            <FontAwesomeIcon icon={faIndianRupeeSign} /> 2,499
+          </p>
+          <div className="mt-2">
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon
+              icon={faStarHalfStroke}
+              color="#e0c40b"
+            ></FontAwesomeIcon>
+          </div>
+        </div>
+
+        <div className="w-50 h-52 p-3">
+          <img src={dslr} alt="dslr" className="w-full h-full object-contain" />
+          <p className="font-semibold mt-6">
+            Canon EOS 1500D 24.1MP DSLR Camera
+          </p>
+          <p className="font-semibold mt-2">
+            <FontAwesomeIcon icon={faIndianRupeeSign} /> 39,990
+          </p>
+          <div className="mt-2">
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faStar} color="#e0c40b"></FontAwesomeIcon>
           </div>
         </div>
       </div>
