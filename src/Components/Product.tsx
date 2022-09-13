@@ -88,7 +88,6 @@ const Product = (props: Props) => {
             <img loading="lazy" src={el8} alt="el8" />
             <h3>Camera accessories</h3>
           </div>
-          {/* </Carousel> */}
         </div>
       </div>
     </div>
